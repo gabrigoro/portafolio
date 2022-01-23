@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Hexcreator</title>
+</head>
+
+<body>
+    <!-- Animacion -->
+    <header class="overlay">
+        <p class="screen">Hexagon</p>
+        <div class="intro">
+            <button class="myBtn" onclick="fadeOut()">COMENZAR</button>
+        </div>
+    </header>
+    <!-- Div de transicion -->
+    <div class="overlay-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark nav-bar-desktop ">
+        <ul class="nav-ul ml-auto">
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content ">
+        <!-- Yo -->
+        <div id ="home" class="row col-12 text-center">
+            <div class="col-12 offset-md-1 col-md-6 text-center">
+                <h1 class="mt-md-5">Bienvenidos a mi landing page</h1>
+                <p>en esta pagina se encontraran todos los datos referidos a cada uno de mis proyectos</p>
+               <div id="cv">
+                <a target= "_blank" href="https://drive.google.com/file/d/1vGOAYl5e8yBjx6ODBTU-x6QKNRJ1b8QY/view?usp=sharing"> <span>Ver CV <img src="img/cv.png"
+                    alt="Linkedin"></span></a>
+                </div>
+            </div>
+            
+            <img id="profile" src="img/gencielo.jpeg" alt="Foto de perfil" class="col-12 col-md-3">
+        </div>
+        <!-- Proyectos -->
+        <div id="projects" class="container mt-5">
+            <h2>Proyectos</h2>
+            <div class="row mt-5 flex-container">
+                <!-- Registro de visitantes -->
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title"><strong>SS</strong></h5>
+                        <p>Wep App orientada al registro de personas en coworking, realizado con Firebase, JavaScript, HTML5 y CSS3</p>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/registro.jpg" alt="Registro">
+                        <div class="card-footer bg-transparent"> 
+                            <a target= "_blank" href="https://genesismauries.github.io/visitor-registration/src/index.html"
+                                class="btn btn-light">Demo</a>
+                            <a target= "_blank" href="https://github.com/GenesisMauries/visitor-registration" class="btn btn-light">Código</a></div>
+                    </div>
+                </div>
+                <!-- Lux -->
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title"> <strong>LUX</strong></h5>
+                        <p>Red social para personas con problemas de salud emocial , realizado con Firebase, JavaScript, HTML5 y Bootstrap.</p>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/lux.jpg" alt="LUX">
+                        <div class="card-footer bg-transparent"> <a target= "_blank" href="https://alppacat.github.io/cdmx-2018-06-bc-core-am-social-network/src/"
+                                class="btn btn-light">Demo</a>
+                            <a target= "_blank" href="https://github.com/GenesisMauries/cdmx-2018-06-bc-core-am-social-network" class="btn btn-light">Código</a></div>
+                    </div>
+                </div>
+                <!-- Movies -->
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title"><strong>MOVIES</strong></h5>
+                        <p>Wep App para obtener informacion de peliculas, series y vedeojuegos , realizado con API'S, JavaScript, HTML5,</p>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/movie1.jpg" alt="Movies">
+                        <div class="card-footer bg-transparent"> <a target= "_blank" href="https://genesismauries.github.io/themovieapi/docs/scr/index.html"
+                                class="btn btn-light">Demo</a>
+                            <a  target= "_blank" href="https://github.com/GenesisMauries/themovieapi" class="btn btn-light">Código</a></div>
+                    </div>
+                </div>
+                <!-- Gato -->
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title"><strong>GATO</strong></h5>
+                        <p>App nativa basada en el popular juego de gato, publicada en expo y realizada con React Native para Android</p>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/gato.jpg" alt="Gato">
+                        <div class="card-footer bg-transparent"> 
+                            <a target= "_blank" href="https://expo.io/@genesismauries/mequiere"
+                                class="btn btn-light">Demo</a>
+                            <a target= "_blank" href="https://github.com/GenesisMauries/gato" class="btn btn-light">Código</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Habilidades -->
+        <div id="skills" class="container mt-5">
+            <h2>Habilidades</h2>
+            <ul class="skills-container-wrap mt-5">
+                <li class="skills-item"><span> <img src="img/js6.png" alt="JavaScript">JavaScript </span></li>
+                <li class="skills-item"><span> <img src="img/reactjs.png" alt="React"> React</span></li>
+                <li class="skills-item"><span> <img src="img/html5.png" alt="HTML"> HTML5</span></li>
+                <li class="skills-item"><span> <img src="img/css3.png" alt="CSS3"> CSS3</span></li>
+                <li class="skills-item"><span><img src="img/blockchain2.png" alt="Blockchain">Blockchain </span></li>
+                <li class="skills-item"><span> <img src="img/autoaprendizaje (2).png" alt="Autoaprendizaje">Auto
+                        aprendizaje</span></li>
+                <li class="skills-item"><span><img src="img/gestion de tiempo.png" alt="">Gestión de tiempo </span></li>
+                <li class="skills-item"><span> <img src="img/etica.png" alt="">Ética</span></li>
+                <li class="skills-item"><span><img src="img/asertividad.png" alt="Asertividad">Asertividad </span></li>
+                <li class="skills-item"><span> <img src="img/resilencia.png" alt="Resilencia">Resiliencia</span></li>
+                <li class="skills-item"><span> <img src="img/agil.png" alt="Scrum">Scrum</span></li>
+
+            </ul>
+
+
+        </div>
+        <!-- Contacto -->
+        <div id="contact" class="container mt-5">
+            <h2>Contacto</h2>
+            <div class="row">
+                <ul class="contact-list skills-container-wrap">
+                    <li><a href="mailto:genesismauries@gmail.com"><span>Correo <img src="img/gmail.png" alt="LinkCorreo"></span>
+                        </a></li>
+                    <li><a target= "_blank" href="https://github.com/GenesisMauries"><span>GitHub <img src="img/github.png" alt="LinkGithub"></span>
+                        </a></li>
+                    <li><a target= "_blank" href="https://www.linkedin.com/in/genesismauries/"> <span>LinkedIn <img src="img/linkedin.png"
+                                    alt="Linkedin"></span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Navbar dispositivos -->
+    <nav class="navbar navbar-dark bg-dark nav-movil">
+        <ul class="nav-ul ml-auto">
+            <!-- <li><a href="#home"><img src="img/inicio.png" alt="Home"></a></li> -->
+            <li><a href="#projects"><img src="img/proyectos.png" alt="Proyectos"></a></li>
+            <li><a href="#skills"><img src="img/habilidades.png" alt="Habilidades"></a></li>
+            <li><a href="#contact"><img src="img/contacto.png" alt="Contacto"></a></li>
+        </ul>
+    </nav>
+    </div><!--  Aqui cierra el div content -->
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

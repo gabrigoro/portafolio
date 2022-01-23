@@ -1,0 +1,339 @@
+* {
+box-sizing: border-box;
+
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+    font-family: Poppins;
+}
+/* Animacion */
+.overlay-2 {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2b2c72;
+}
+.overlay{
+    z-index: 1;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #353434;
+   
+   
+}
+@keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%); }
+    30% { transform: translate(7%, -25%); }
+    40% { transform: translate(-5%, 25%); }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0%); }
+    70% { transform: translate(0%, 15%); }
+    80% { transform: translate(3%, 35%); }
+    90% { transform: translate(-10%, 10%); }
+}
+
+.overlay p {
+    font-size: 3.7em;
+    font-weight: 800;
+}
+
+.screen {
+    color: #636161;
+    font-family: Poppins;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myBtn {
+    font-family: Poppins;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100%;
+}
+button {
+    display: block;
+    padding: 24px 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 5%;
+    letter-spacing: 6px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+}
+.myBtn:hover {
+    color: #101010;
+    cursor: pointer;
+}
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+.myBtn:hover:before {
+    top: 0;
+}
+/* Navbar */
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343a40
+}
+li {
+    float: left;
+}
+li a {
+    font-family: Poppins;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+li a:hover{
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+.nav-movil img{
+    width: 60%;
+    height: 60%;
+}
+
+@media (max-width: 768px){
+    .nav-bar-desktop{
+        display: none;
+        visibility: hidden;
+    }
+    .nav-movil{
+        position: sticky;
+        top: 0;
+    }
+    
+    .content{
+        top: 50%;
+    }
+    #profile{
+        margin: 0 auto;
+        max-width:  277px;
+        max-height: 330px;
+        
+    }
+}
+@media (min-width: 768px) {
+    .nav-movil{
+        display: none;
+        visibility: hidden;
+    }
+    .content{
+        top: 65%
+    }
+    #profile{
+        margin: 0 auto;
+    }
+}
+/* Yo xd */
+#profile{
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    
+}
+#cv a{
+    color: #101010;
+  
+}
+#cv {
+    font-family: Poppins;
+    text-align:center;
+    color: #101010;
+    margin-bottom: 9%;
+}
+#cv:hover{
+    color:#333;
+    background-color: #fff;
+    border: 2px solid #48A9A6;
+    border-radius: 5px;
+}
+.content h1 {
+    font-family: Poppins;
+    font-size: 2.6em;
+    color: #101010;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-top: 0;
+    text-align: center;
+    color: #101010;
+    font-weight: 2em;
+}
+/* Proyectirigillos */
+#projects  h2{
+    font-family: Poppins;
+    font-size: 2.6em;
+    color: #101010;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align:center;
+}
+.card{
+    max-width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+}
+.card img{
+    width: 216px;
+    height: 277.95px;
+}
+.card p{
+    font-family: Poppins;
+    color: #fff;
+    font-size: 0.9em;
+
+}
+@media only screen and (max-width: 992px){
+    .card{
+        max-width: 40%;
+    }
+}
+@media only screen and (max-width: 767.98px){
+    .card{
+        max-width: 80%;
+    }
+}
+.flex-container {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+/* Habilidades */
+.skills-container-wrap{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+.skills-item{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px 50px 10px;
+    color: #333333;
+    font-size:1em;
+    text-align:center;
+}
+.skills-item img {
+    width:100%
+}
+#skills  h2{
+    font-family: Poppins;
+    font-size: 2.6em;
+    color: #101010;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#skills span{
+    font-family: Poppins;
+}
+/* Contacto */
+#contact h2{
+    font-family: Poppins;
+    font-size: 2.6em;
+    color: #101010;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align:center;
+}
+#contact .contact-list {
+list-style-type: none;
+padding: 0;
+}
+#contact .contact-list li a{
+    color: #333;
+}
+#contact .contact-list li a:hover{
+    color:#333;
+    background-color: #fff;
+    border: 2px solid #6248a9;
+    border-radius: 5px;
+}
+#contact .row{
+    justify-content: center;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+    /* z-index: -1; */
+    position: absolute;
+    
+    /* left: 10%; */
+    transform: translate(0, -100%);
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
