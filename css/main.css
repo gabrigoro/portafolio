@@ -1,17 +1,17 @@
 * {
-box-sizing: border-box;
-
+    box-sizing: border-box !important;
 }
-
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    cursor: crosshair;
+    cursor: default;
     font-family: Poppins;
+    padding-bottom: 20%;
 }
+
 /* Animacion */
 .overlay-2 {
     z-index: 0;
@@ -49,24 +49,26 @@ html, body {
 
 .screen {
     color: #636161;
-    font-family: Poppins;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .myBtn {
-    font-family: Poppins;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 100%;
 }
+
+.myBtn:focus {
+    outline: none;
+}
+
 button {
     display: block;
     padding: 24px 48px;
-    font-family: Poppins;
     font-weight: 700;
     font-size: 5%;
     letter-spacing: 6px;
@@ -109,20 +111,17 @@ button {
 li {
     float: left;
 }
-li a {
-    font-family: Poppins;
+nav li a {
     display: block;
     text-align: center;
     padding: 16px;
     text-decoration: none;
     color: #fff;
 }
-li a:hover{
+nav li a:hover{
     background-color: #111;
     color: #fff;
     text-decoration: none;
-    
-    
 }
 
 .nav-movil img{
@@ -174,7 +173,6 @@ li a:hover{
   
 }
 #cv {
-    font-family: Poppins;
     text-align:center;
     color: #101010;
     margin-bottom: 9%;
@@ -186,12 +184,12 @@ li a:hover{
     border-radius: 5px;
 }
 .content h1 {
-    font-family: Poppins;
     font-size: 2.6em;
     color: #101010;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 10px !important;
 }
 
 .content p {
@@ -202,7 +200,6 @@ li a:hover{
 }
 /* Proyectirigillos */
 #projects  h2{
-    font-family: Poppins;
     font-size: 2.6em;
     color: #101010;
     font-weight: 700;
@@ -221,7 +218,6 @@ li a:hover{
     height: 277.95px;
 }
 .card p{
-    font-family: Poppins;
     color: #fff;
     font-size: 0.9em;
 
@@ -278,7 +274,6 @@ li a:hover{
     width:100%
 }
 #skills  h2{
-    font-family: Poppins;
     font-size: 2.6em;
     color: #101010;
     font-weight: 700;
@@ -287,12 +282,12 @@ li a:hover{
     text-align: center;
 }
 
-#skills span{
-    font-family: Poppins;
-}
 /* Contacto */
-#contact h2{
-    font-family: Poppins;
+#contact { 
+    margin-bottom: 5vh;
+}
+
+#contact h2 {
     font-size: 2.6em;
     color: #101010;
     font-weight: 700;
@@ -304,15 +299,21 @@ li a:hover{
 list-style-type: none;
 padding: 0;
 }
-#contact .contact-list li a{
+#contact .contact-list li a {    
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    color: #fff;
     color: #333;
-}
-#contact .contact-list li a:hover{
-    color:#333;
-    background-color: #fff;
-    border: 2px solid #6248a9;
+    border: 2px solid white;
     border-radius: 5px;
 }
+
+#contact .contact-list li a:hover {
+    background-color: #fff;
+    border: 2px solid #6248a9;
+}
+
 #contact .row{
     justify-content: center;
 }
@@ -330,10 +331,7 @@ padding: 0;
     margin-left: 0;
 }
 
-
-
-
-
-
-
-
+/* Navbar para dispositivos */
+.navbar.navbar-dark.bg-dark.nav-movil {
+    padding: 0;
+}
